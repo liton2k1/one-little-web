@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative w-full min-h-[700px] flex items-center justify-center overflow-hidden border-b border-gray-100">
+    <div className="relative w-full min-h-175 flex items-center justify-center overflow-hidden border-b border-gray-100">
       {/* Grid Background */}
       <div
         className="absolute inset-0 opacity-[0.08]"

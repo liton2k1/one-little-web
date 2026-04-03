@@ -51,7 +51,7 @@ const Services = () => {
     <section className="mt-20 bg-white" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-[#ED3C6A] text-2xl font-bold uppercase tracking-widest mb-5">
+          <h2 className="text-[#ED3C6A] text-3xl font-bold mb-5">
             <span className="text-black"> Our</span> Service
           </h2>
           <p className="text-sm max-w-2xl mx-auto">
