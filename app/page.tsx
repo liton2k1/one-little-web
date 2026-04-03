@@ -5,6 +5,7 @@ import Pricing from "./components/Pricing";
 import Services from "./components/Services";
 import Tools from "./components/Tools";
 import Trusted from "./components/Trusted";
+import WhyChoose from "./components/WhyChoose";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Pricing />
       <Tools />
       <GettingStarted />
+      <WhyChoose />
     </main>
   );
 }
