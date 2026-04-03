@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="absolute w-2 h-2 bg-red-400 rounded-full bottom-[20%] right-[15%]" />
 
       {/* Oval Border */}
-      <div className="absolute w-[900px] h-[450px] border-2 border-blue-500 rounded-full" />
+      <div className="absolute w-225 h-112.5 border-2 border-blue-500 rounded-full" />
 
       {/* Floating Logos */}
       <Image

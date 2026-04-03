@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white sticky top-0 z-50 shadow-[0_10px_40px_rgba(237,60,106,0.3)]">
+    <nav className="bg-white sticky top-0 z-50 shadow-[0_10px_40px_rgba(237,60,106,0.3)] lg:py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <Link
                   key={item}
                   href="#"
-                  className={`text-sm font-medium transition-colors ${
+                  className={`font-medium transition-colors ${
                     item === "Home"
                       ? "text-[#ED3C6A] border-b border-[#ED3C6A]"
                       : "text-gray-600 hover:text-[#ED3C6A]"
