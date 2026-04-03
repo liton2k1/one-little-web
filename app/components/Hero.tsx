@@ -22,14 +22,26 @@ const Hero = () => {
         }}
       />
 
-      {/* Floating Dots */}
-      <div className="absolute w-2 h-2 bg-blue-500 rounded-full top-[20%] left-[10%]" />
-      <div className="absolute w-2 h-2 bg-yellow-400 rounded-full top-[30%] right-[12%]" />
-      <div className="absolute w-2 h-2 bg-green-400 rounded-full bottom-[25%] left-[20%]" />
-      <div className="absolute w-2 h-2 bg-red-400 rounded-full bottom-[20%] right-[15%]" />
+      {/* Floating Dots — 7 total */}
+      <div className="absolute w-3 h-3 bg-[#635BFF] rounded-full top-[20%] left-[8%]" />
+      <div className="absolute w-3 h-3 bg-[#FF5A5F] rounded-full top-[48%] left-[14%]" />
+      <div className="absolute w-2 h-2 bg-[#FFEC5A] rounded-full bottom-[22%] left-[8%]" />
+      <div className="absolute w-3 h-3 bg-[#34E0A1] rounded-full top-[16%] left-[50%]" />
+      <div className="absolute w-3 h-3 bg-[#FFEC5A] rounded-full top-[35%] right-[20%]" />
+      <div className="absolute w-2 h-2 bg-[#0C3B7C] rounded-full bottom-[25%] right-[17%]" />
+      <div className="absolute w-3 h-3 bg-[#5AF9FF] rounded-full bottom-[14%] left-[50%]" />
 
-      {/* Oval Border */}
-      <div className="absolute w-225 h-112.5 border-2 border-blue-500 rounded-full" />
+      {/* Blur inside oval — covers full circle area */}
+      <div
+        className="absolute rounded-full pointer-events-none"
+        style={{
+          width: "900px",
+          height: "450px",
+          background:
+            "radial-gradient(ellipse at center, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.5) 75%, transparent 100%)",
+          filter: "blur(32px)",
+        }}
+      />
 
       {/* Floating Logos */}
       <Image
