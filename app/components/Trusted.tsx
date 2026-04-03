@@ -5,13 +5,13 @@ import logo3 from "../../public/Clip path group.svg";
 import logo4 from "../../public/Group.svg";
 import logo5 from "../../public/Group (1).svg";
 import logo6 from "../../public/Clip path group (1).svg";
-import logo7 from "../../public/Group 39932.svg";
+import logo7 from "../../public/Vector.svg";
 
 const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
 const Trusted = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-20">
       <p className="text-center font-semibold mb-10">
         Trusted by leaders in 50+ industries
       </p>
