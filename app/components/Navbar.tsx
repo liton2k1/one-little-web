@@ -12,12 +12,10 @@ const Navbar = () => {
     <nav className="bg-white sticky top-0 z-50 shadow-[0_10px_40px_rgba(237,60,106,0.3)] lg:py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div>
             <Image src={google} alt="" />
           </div>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {["Home", "About", "Services", "Pricing", "Blog", "Resources"].map(
               (item) => (
@@ -36,7 +34,6 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* CTA Button */}
           <div className="hidden md:block">
             <Link
               href="#"
@@ -46,7 +43,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Toggle */}
           <button
             className="md:hidden p-2 text-gray-600"
             onClick={() => setIsOpen(!isOpen)}
@@ -56,7 +52,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3">
           {["Home", "About", "Services", "Pricing", "Blog", "Resources"].map(

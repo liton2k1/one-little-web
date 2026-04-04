@@ -27,14 +27,12 @@ const steps = [
 const GettingStarted = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-      {/* Heading */}
       <div className="text-center mb-4">
         <h2 className="text-3xl font-bold text-gray-900">
           Getting Started is <span className="text-[#ED3C6A]">Easy</span>
         </h2>
       </div>
 
-      {/* Description */}
       <p className="text-center text-sm max-w-2xl mx-auto mb-12 leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -42,11 +40,9 @@ const GettingStarted = () => {
         commodo consequat.
       </p>
 
-      {/* Cards */}
       <div className="flex flex-col md:flex-row gap-6 max-w-4xl mx-auto justify-center">
         {steps.map((step) => (
           <div key={step.number} className="relative flex-1">
-            {/* Number badge — top-left of card */}
             <div
               className="absolute -top-4 -left-4 z-10 w-14 h-14 rounded-full bg-white flex items-center justify-center text-2xl border-4"
               style={{ borderColor: "#ED3C6A", color: "#00000" }}
@@ -54,7 +50,6 @@ const GettingStarted = () => {
               {step.number}
             </div>
 
-            {/* Card */}
             <div className="bg-white rounded-xl border-2 border-[#FDEBF0] flex flex-col items-center justify-center py-10 px-6 min-h-45">
               <Image
                 src={step.icon}
@@ -65,7 +60,6 @@ const GettingStarted = () => {
               />
             </div>
 
-            {/* Label below card */}
             <p className="text-center text-gray-800 font-semibold mt-4 leading-snug whitespace-pre-line">
               {step.title}
             </p>

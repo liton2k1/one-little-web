@@ -30,7 +30,6 @@ const Testimonials = () => {
   return (
     <div className="mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">
             Check Our Clients <span className="text-[#ED3C6A]">Review</span>
@@ -43,7 +42,6 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {reviews.map((review) => (
             <div
@@ -60,13 +58,11 @@ const Testimonials = () => {
                   className="w-20 h-20 rounded-full object-cover"
                 />
                 <div>
-                  {/* Text */}
                   <p className="font-semibold text-gray-900 text-sm">
                     {review.name}
                   </p>
                   <p className="text-gray-500 text-xs">{review.text}</p>
 
-                  {/* Stars */}
                   <div className="flex gap-1">
                     {[...Array(review.rating)].map((_, si) => (
                       <Star key={si} size={14} fill="#f5a623" color="#f5a623" />

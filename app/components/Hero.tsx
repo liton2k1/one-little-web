@@ -10,7 +10,6 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="relative w-full min-h-175 flex items-center justify-center overflow-hidden border-b border-gray-100">
-      {/* Grid Background */}
       <div
         className="absolute inset-0 opacity-[0.08]"
         style={{
@@ -22,7 +21,6 @@ const Hero = () => {
         }}
       />
 
-      {/* Floating Dots — 7 total */}
       <div className="absolute w-3 h-3 bg-[#635BFF] rounded-full top-[20%] left-[8%]" />
       <div className="absolute w-3 h-3 bg-[#FF5A5F] rounded-full top-[48%] left-[14%]" />
       <div className="absolute w-2 h-2 bg-[#FFEC5A] rounded-full bottom-[22%] left-[8%]" />
@@ -31,7 +29,6 @@ const Hero = () => {
       <div className="absolute w-2 h-2 bg-[#0C3B7C] rounded-full bottom-[25%] right-[17%]" />
       <div className="absolute w-3 h-3 bg-[#5AF9FF] rounded-full bottom-[14%] left-[50%]" />
 
-      {/* Blur inside oval — covers full circle area */}
       <div
         className="absolute rounded-full pointer-events-none"
         style={{
@@ -39,11 +36,10 @@ const Hero = () => {
           height: "450px",
           background:
             "radial-gradient(ellipse at center, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.5) 75%, transparent 100%)",
-          filter: "blur(32px)",
+          // filter: "blur(32px)",
         }}
       />
 
-      {/* Floating Logos */}
       <Image
         src={airbnb}
         alt="Airbnb"
@@ -73,7 +69,6 @@ const Hero = () => {
         className="absolute bottom-[18%] right-[30%]"
       />
 
-      {/* Content */}
       <div className="relative z-10 text-center max-w-xl px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-black">
           Airbnb Assistants For
@@ -88,7 +83,6 @@ const Hero = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
-        {/* Buttons */}
         <div className="mt-6 flex flex-col items-center gap-3">
           <Link
             href="#"

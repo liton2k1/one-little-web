@@ -60,12 +60,9 @@ const WhyChoose = () => {
           </Link>
         </div>
 
-        {/* Right */}
         <div className="relative flex items-center justify-center min-h-80">
-          {/* Blob */}
           <div className="absolute w-96 h-60 rounded-full bg-[#f5a8be]" />
 
-          {/* Person */}
           <div className="relative -top-7 z-20">
             <Image
               src={person}
@@ -76,7 +73,6 @@ const WhyChoose = () => {
             />
           </div>
 
-          {/* Listing card */}
           <div className="absolute top-4 left-5 z-10 bg-white rounded-lg shadow-md p-2 flex gap-3 items-center min-w-45">
             <div className="w-24 h-16 rounded-md overflow-hidden shrink-0">
               <Image
@@ -99,7 +95,6 @@ const WhyChoose = () => {
             </div>
           </div>
 
-          {/* Logos card */}
           <div className="absolute top-4 right-14 z-10 bg-white rounded-xl shadow-md p-3 grid grid-cols-2 gap-2">
             {logos.map((logo) => (
               <div
@@ -117,7 +112,6 @@ const WhyChoose = () => {
             ))}
           </div>
 
-          {/* Calendar card */}
           <div className="absolute bottom-1 left-0 z-10">
             <Image
               src={calender}

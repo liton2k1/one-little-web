@@ -14,7 +14,7 @@ const icons = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9];
 
 export default function Tools() {
   return (
-    <div id="tools" className="mt-20">
+    <div className="mt-20">
       <div className="text-center mb-20">
         <span className="text-[#ED3C6A] text-3xl font-bold">
           <span className="text-black">Our</span> Tools

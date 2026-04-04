@@ -73,7 +73,6 @@ const Pricing = () => {
         </h2>
         <p className="mb-8">Choose a plan that’s right for you</p>
 
-        {/* Toggle */}
         <div className="flex items-center justify-center gap-4 mb-12">
           <span className={`text-sm ${!isYearly ? "font-bold" : ""}`}>
             Pay Monthly
@@ -98,7 +97,6 @@ const Pricing = () => {
           )}
         </div>
 
-        {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {plans.map((plan) => (
             <div

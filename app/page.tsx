@@ -7,6 +7,7 @@ import Tools from "./components/Tools";
 import Trusted from "./components/Trusted";
 import WhyChoose from "./components/WhyChoose";
 import Testimonials from "./components/Testimonials";
+import FAQ from "./components/Faq";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <GettingStarted />
       <WhyChoose />
       <Testimonials />
+      <FAQ />
     </main>
   );
 }
