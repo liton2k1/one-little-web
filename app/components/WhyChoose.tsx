@@ -28,7 +28,7 @@ const logos = [
 const WhyChoose = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-      <div className="w-full bg-[#FDEBF0] border border-[#F8BECD] rounded-3xl p-14 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="w-full bg-[#FDEBF0] border border-[#F8BECD] rounded-3xl lg:p-14 p-5 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left */}
         <div className="flex flex-col gap-6">
           <h2 className="text-3xl font-bold text-gray-900 leading-tight">

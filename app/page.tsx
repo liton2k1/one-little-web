@@ -8,6 +8,7 @@ import Trusted from "./components/Trusted";
 import WhyChoose from "./components/WhyChoose";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/Faq";
+import Cta from "./components/Cta";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <WhyChoose />
       <Testimonials />
       <FAQ />
+      <Cta />
     </main>
   );
 }
