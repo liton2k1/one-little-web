@@ -44,7 +44,12 @@ const GettingStarted = () => {
         {steps.map((step) => (
           <div key={step.number} className="relative flex-1">
             <div
-              className="absolute -top-4 -left-4 z-10 w-14 h-14 rounded-full bg-white flex items-center justify-center text-2xl border-4"
+              className="
+    absolute 
+    top-0 left-1/2 -translate-x-1/2 -translate-y-1/2   /* mobile: top center */
+    md:-top-4 md:-left-4 md:translate-x-0 md:translate-y-0  /* desktop unchanged */
+    z-10 w-14 h-14 rounded-full bg-white flex items-center justify-center text-2xl border-4
+  "
               style={{ borderColor: "#ED3C6A", color: "#00000" }}
             >
               {step.number}

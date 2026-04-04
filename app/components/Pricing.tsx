@@ -95,20 +95,20 @@ const Pricing = () => {
 
           {isYearly ? (
             <div className="flex items-center gap-2">
-              <Image src={arrow} alt="" />
+              <Image src={arrow} alt="" className="hidden lg:block" />
               <span
                 style={{ color: primaryColor }}
-                className="text-sm font-semibold mt-8"
+                className="text-sm font-semibold lg:mt-8"
               >
                 Save 50%
               </span>
             </div>
           ) : (
             <div className="flex items-center gap-2">
-              <Image src={arrow} alt="" />
+              <Image src={arrow} alt="" className="hidden lg:block" />
               <span
                 style={{ color: primaryColor }}
-                className="text-sm font-semibold mt-8"
+                className="text-sm font-semibold lg:mt-8"
               >
                 Save 25%
               </span>
@@ -116,11 +116,11 @@ const Pricing = () => {
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`border rounded-xl p-8 flex flex-col justify-between transition-transform`}
+              className={`border rounded-xl lg:p-8 p-3 flex flex-col justify-between transition-transform`}
               style={{
                 backgroundColor: plan.popular ? primaryColor : "white",
                 color: plan.popular ? "white" : "inherit",

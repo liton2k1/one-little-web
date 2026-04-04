@@ -49,21 +49,23 @@ const Testimonials = () => {
               className="rounded-xl p-7 flex flex-col gap-5 bg-[#F6F6F6] hover:bg-white hover:shadow-2xl"
             >
               {/* Profile */}
-              <div className="flex items-center gap-5">
+              <div className="lg:flex items-center gap-5">
                 <Image
                   src={review.avatar}
                   alt={review.name}
                   width={80}
                   height={80}
-                  className="w-20 h-20 rounded-full object-cover"
+                  className="lg:w-20 lg:h-20 w-16 h-16 mx-auto rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm">
+                  <p className="font-semibold text-gray-900 text-sm lg:text-start text-center lg:my-0 my-3">
                     {review.name}
                   </p>
-                  <p className="text-gray-500 text-xs">{review.text}</p>
+                  <p className="text-gray-500 text-xs lg:text-start text-center">
+                    {review.text}
+                  </p>
 
-                  <div className="flex gap-1">
+                  <div className="flex gap-1 mt-3 justify-center lg:justify-start">
                     {[...Array(review.rating)].map((_, si) => (
                       <Star key={si} size={14} fill="#f5a623" color="#f5a623" />
                     ))}
