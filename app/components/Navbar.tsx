@@ -2,18 +2,18 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Menu, X } from "lucide-react";
-import google from "../../public/Google-Logo.wine 1.png";
+import logo from "../../public/google.png";
 import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white sticky top-0 z-50 shadow-[0_10px_40px_rgba(237,60,106,0.3)] lg:py-2">
+    <nav className="bg-white shadow-[0_0px_40px_rgba(237,60,106,0.3)] lg:py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div>
-            <Image src={google} alt="" />
+            <Image src={logo} alt="logo" width={120} height={100} />
           </div>
 
           <div className="hidden md:flex items-center gap-8">

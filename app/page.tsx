@@ -9,6 +9,7 @@ import WhyChoose from "./components/WhyChoose";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/Faq";
 import Cta from "./components/Cta";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <Cta />
+      <Footer />
     </main>
   );
 }

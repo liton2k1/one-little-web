@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Check, X } from "lucide-react";
+import Image from "next/image";
+import arrow from "../../public/Arrow 2.png";
 
 const plans = [
   {
@@ -90,10 +92,27 @@ const Pricing = () => {
           <span className={`text-sm ${isYearly ? "font-bold" : ""}`}>
             Pay Yearly
           </span>
-          {isYearly && (
-            <span style={{ color: primaryColor }} className="text-sm ml-2">
-              Save 25%
-            </span>
+
+          {isYearly ? (
+            <div className="flex items-center gap-2">
+              <Image src={arrow} alt="" />
+              <span
+                style={{ color: primaryColor }}
+                className="text-sm font-semibold mt-8"
+              >
+                Save 50%
+              </span>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <Image src={arrow} alt="" />
+              <span
+                style={{ color: primaryColor }}
+                className="text-sm font-semibold mt-8"
+              >
+                Save 25%
+              </span>
+            </div>
           )}
         </div>
 

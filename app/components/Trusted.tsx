@@ -23,7 +23,7 @@ const Trusted = () => {
                 <Image
                   src={logo}
                   alt={`Brand ${index + 1}`}
-                  className="h-8 w-auto"
+                  className="h-8 w-full"
                 />
               </div>
             ))}

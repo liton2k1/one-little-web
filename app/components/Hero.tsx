@@ -40,34 +40,36 @@ const Hero = () => {
         }}
       />
 
-      <Image
-        src={airbnb}
-        alt="Airbnb"
-        width={80}
-        height={80}
-        className="absolute top-[18%] left-[28%]"
-      />
-      <Image
-        src={booking}
-        alt="Booking"
-        width={80}
-        height={80}
-        className="absolute top-[18%] right-[28%]"
-      />
-      <Image
-        src={vrbo}
-        alt="Vrbo"
-        width={80}
-        height={80}
-        className="absolute bottom-[18%] left-[30%]"
-      />
-      <Image
-        src={tripadvisor}
-        alt="Tripadvisor"
-        width={80}
-        height={80}
-        className="absolute bottom-[18%] right-[30%]"
-      />
+      <div className="hidden lg:block">
+        <Image
+          src={airbnb}
+          alt="Airbnb"
+          width={80}
+          height={80}
+          className="absolute top-[18%] left-[28%]"
+        />
+        <Image
+          src={booking}
+          alt="Booking"
+          width={80}
+          height={80}
+          className="absolute top-[18%] right-[28%]"
+        />
+        <Image
+          src={vrbo}
+          alt="Vrbo"
+          width={80}
+          height={80}
+          className="absolute bottom-[18%] left-[30%]"
+        />
+        <Image
+          src={tripadvisor}
+          alt="Tripadvisor"
+          width={80}
+          height={80}
+          className="absolute bottom-[18%] right-[30%]"
+        />
+      </div>
 
       <div className="relative z-10 text-center max-w-xl px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-black">

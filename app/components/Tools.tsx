@@ -6,8 +6,8 @@ import icon3 from "../../public/image 13.png";
 import icon4 from "../../public/image 14.png";
 import icon5 from "../../public/image 15.png";
 import icon6 from "../../public/image.png";
-import icon7 from "../../public/image.png";
-import icon8 from "../../public/image.png";
+import icon7 from "../../public/image 14.png";
+import icon8 from "../../public/image 15.png";
 import icon9 from "../../public/image.png";
 
 const icons = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9];

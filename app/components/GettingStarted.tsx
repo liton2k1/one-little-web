@@ -40,7 +40,7 @@ const GettingStarted = () => {
         commodo consequat.
       </p>
 
-      <div className="flex flex-col md:flex-row gap-6 max-w-4xl mx-auto justify-center">
+      <div className="flex flex-col md:flex-row gap-8 justify-center">
         {steps.map((step) => (
           <div key={step.number} className="relative flex-1">
             <div
@@ -60,7 +60,7 @@ const GettingStarted = () => {
               />
             </div>
 
-            <p className="text-center text-gray-800 font-semibold mt-4 leading-snug whitespace-pre-line">
+            <p className="text-center text-gray-800 font-semibold mt-7 leading-snug whitespace-pre-line">
               {step.title}
             </p>
           </div>
